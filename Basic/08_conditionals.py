@@ -4,14 +4,14 @@
 
 # if
 
-my_condition = False
+my_condition = False## 
 
-if my_condition:  # Es lo mismo que if my_condition == True:
+if my_condition:  # Es lo mismo que if my_condition == True: si es true puede seguir el codigo y si es false se detiene en la primera linea y detiene el codigo 
     print("Se ejecuta la condición del if")
 
 my_condition = 5 * 5
 
-if my_condition == 10:
+if my_condition == 10:##contra una condicion especifica, si no le pones contra nada espera true o false 
     print("Se ejecuta la condición del segundo if")
 
 # if, elif, else
@@ -23,7 +23,7 @@ elif my_condition == 25:
 else:
     print("Es menor o igual que 10 o mayor o igual que 20 o distinto de 25")
 
-print("La ejecución continúa")
+print("La ejecución continúa")#sin tabulacion al inicio cierra la condicion
 
 # Condicional con ispección de valor
 
