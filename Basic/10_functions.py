@@ -60,7 +60,7 @@ print_name_with_default("Brais", "Moure", "MoureDev")
 # Función con parámetros de entrada/argumentos arbitrarios
 
 
-def print_upper_texts(*texts):#*texts para recibir x cantidad de variables de ese tipo
+def print_upper_texts(*texts):# *texts para recibir x cantidad de variables de ese tipo
     print(type(texts))
     for text in texts:
         print(text.upper())
