@@ -4,8 +4,8 @@
 
 # Definición
 
-class MyEmptyPerson:
-    pass  # Para poder dejar la clase vacía
+class MyEmptyPerson:#buena practica mayuscula cada palabra y todo junto
+    pass  # Para poder dejar la clase vacía y se ejecute el codigo
 
 
 print(MyEmptyPerson)
@@ -15,7 +15,7 @@ print(MyEmptyPerson())
 
 
 class Person:
-    def __init__(self, name, surname, alias="Sin alias"):
+    def __init__(self, name, surname, alias="Sin alias"):#init para constructor de clase y esta es la forma de asignar valores.
         self.full_name = f"{name} {surname} ({alias})"  # Propiedad pública
         self.__name = name  # Propiedad privada
 
