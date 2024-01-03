@@ -17,15 +17,15 @@ except:
 
 # Flujo completo de una excepción: try except else finally
 
-try:
+try:#codigo a intentar correr   
     print(numberOne + numberTwo)
     print("No se ha producido un error")
-except:
+except:#siempre va despues del try
     print("Se ha producido un error")
-else:  # Opcional
+else:  # entra si el try no entra
     # Se ejecuta si no se produce una excepción
     print("La ejecución continúa correctamente")
-finally:  # Opcional
+finally:  # entra pase lo que pase
     # Se ejecuta siempre
     print("La ejecución continúa")
 
@@ -34,17 +34,17 @@ finally:  # Opcional
 try:
     print(numberOne + numberTwo)
     print("No se ha producido un error")
-except ValueError:
+except ValueError:#error por valor
     print("Se ha producido un ValueError")
-except TypeError:
+except TypeError:#error por tipo de valor
     print("Se ha producido un TypeError")
 
 # Captura de la información de la excepción
 
-try:
+try:#para ver mas a detalle la excepcion por consola
     print(numberOne + numberTwo)
     print("No se ha producido un error")
 except ValueError as error:
     print(error)
-except Exception as my_random_error_name:
+except Exception as my_random_error_name:#exception si es un error no controlado
     print(my_random_error_name)
