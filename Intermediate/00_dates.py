@@ -4,10 +4,8 @@
 
 # Date time
 
-from datetime import timedelta
-from datetime import date
-from datetime import time
-from datetime import datetime
+import datetime #para traer todas las funciones del modulo
+from datetime import date, time, datetime #para traer varios valores de un modulo
 
 now = datetime.now()
 
@@ -19,14 +17,14 @@ def print_date(date):
     print(date.hour)
     print(date.minute)
     print(date.second)
-    print(date.timestamp())
+    print(date.timestamp()) #timestamp momento justo.
 
 
 print_date(now)
 
 year_2023 = datetime(2023, 1, 1)
 
-print_date(year_2023)
+print_date(year_2023) 
 
 # Time
 
