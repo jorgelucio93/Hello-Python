@@ -38,10 +38,10 @@ verdadero o falso (Bool) según sean o no anagramas.
 """
 
 
-def is_anagram(word_one, word_two):
+def is_anagram(word_one, word_two): #anagrama contiene las palabras una en otra de manera desordenada y un palindromo es que alreves conforma la otra palabra.
     if word_one.lower() == word_two.lower():
         return False
-    return sorted(word_one.lower()) == sorted(word_two.lower())
+    return sorted(word_one.lower()) == sorted(word_two.lower())#sorted ordena en orden alfabetico el contenido 
 
 
 print(is_anagram("Amor", "Roma"))
